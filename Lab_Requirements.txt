@@ -1,0 +1,80 @@
+PaperLive DevOps Training
+
+AWS Module::
+
+	- Lab Requirements:
+	
+			1. Create a free tier account on AWS Cloud  		# EC2 Service to create Virtual Machines 
+			
+				- https://aws.amazon.com/console/
+				
+				- https://aws.amazon.com/resources/create-account/
+				
+					- Active Email_ID 
+					- Active Mobile Number 
+					- Active Credit/Debit Card Number enable with International Transaction
+					
+					- PAN Card Number
+					
+				- Login to AWS Management Console using root_user_id(Email_ID) & password
+					- Create MFA - Two-way Authentication 
+					
+						- Install google authenticator App on your mobile phone
+						
+				- Create AWS EC2 Instances - Virtual Machines (Lab Environments)
+				
+			2. GitHub Account 	# Used to maintain the Remote Repositories(Files & Folders).
+				
+				- https://github.com/
+				
+				- https://github.com/PL-AWS-Cloud-DevOps-2807/AWS_Training_Documents
+
+					
+			3. DockerHub Account
+			
+				- https://hub.docker.com/  # Create using existing Github 
+				
+					
+			4. Install Visual Studio Code on Local Machine 	- Develop the Source Code.
+				
+				- https://code.visualstudio.com/download	
+				
+			
+			5. Install git client on Local Machine
+			
+				- https://git-scm.com/install/
+			
+				- Version Control System
+				
+					- Distributed VCS 
+					
+						- Remote Repositories 	- Setup Github Account & Create Remote Repositories 
+						
+						- Local Repositories	- Install Git Client on Local Machine
+												- https://git-scm.com/install/windows
+													- Choose Standalone Installer 
+														- Git for Windows/x64 Setup.
+															- Run this Exec. with the default option
+															
+													- GIT BASH	# Based on Linux Users
+													- GIT CMD	# Based on Window Users
+													- GIT GUI
+
+
+												- Open Git Bash Terminal 
+													- git --version
+													
+			6. Install MobaXTerm/Putty on Local Machine - Windows Users
+			
+				- SSH Agent to connect to Remote Servers.
+				
+				- https://mobaxterm.mobatek.net/download-home-edition.html  
+					# Choose Installer Edition.
+					# Right click & Extract 
+					# Goto to the Folder & Run the Exec.
+					
+			7. Install Terraform on Local Machine
+																
+				# https://developer.hashicorp.com/terraform/install
+					- Choose AMD64 for Windows
+					

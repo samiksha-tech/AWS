@@ -1,0 +1,187 @@
+# AWS Training Reference
+PaperLive DevOps Training
+
+AWS Module Day 1 :  
+
+######################
+Day 1 - 3rd Aug. 2026
+######################
+
+
+	AWS Cloud Platform --> 
+	
+	1. Lab Infra-Structure :
+	
+		AWS Cloud Platform ::
+		
+			- Create Free Account on AWS 
+			
+				- https://aws.amazon.com/console/
+				
+				- https://aws.amazon.com/resources/create-account/
+
+	2. GitHub Account 	# Used to maintain the Remote Repositories(Files & Folders).
+		
+		- https://github.com/
+		
+		
+	3. Install MobaXTerm/Putty on Local Machine - Windows Users
+	
+		- SSH Agent to connect to Remote Servers.
+		
+		- https://mobaxterm.mobatek.net/download-home-edition.html  
+			# Choose Installer Edition.
+			# Right click & Extract 
+			# Goto to the Folder & Run the Exec.
+			
+
+######################
+Day 2 - 4th Aug. 2026
+######################
+
+
+	https://aws.amazon.com/about-aws/global-infrastructure/
+	
+	https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
+
+
+######################
+Day 3 - 10th Aug. 2026
+######################
+
+	- AWS Console:
+	
+		AWS Cloud Service :
+		
+			- AWS Console 			--> Basic/Common --> Web User Interface 
+			
+				- User Login ID
+				
+				- Login Password 
+				
+				- MFA ***
+			
+		- Go to Security Credentials Page ==> MFA --> Assign MFA Device
+			
+		- Regions :::
+		
+			
+		
+			
+			
+			
+			
+			
+			
+			
+				
+			- AWS root User 		==> Email_ID & Password	==> Account Administration
+									==> Create IAM Users/Policies/Roles/Groups
+									==> Administrate the AWS Services
+									==> Billing Management
+			
+			- AWS IAM User			==> Application/Infra-Structure Management on AWS Cloud
+				
+			- RBAC 					==> Role Based Access Control
+			
+			- AWS Console 			==> Password & MFA 
+			
+			- AWS Cli 				==> AWS Access Key & Secret Key
+			
+			- AWS SDK				==> AWS Access Key & Secret Key 
+			
+			- IAC Tools(Terraform/Cloudformation)	==> AWS Access Key & Secret Key
+		
+		- UI Option
+		
+	- AWS Billing and Cost Management:::
+	
+	- AWS IAM Service:
+	
+		- IAM User 		# pldevopsuser01
+							 Access_Key: Aasdf
+							 
+							 Secret_Key: dsfadf
+		
+		- IAM User Group # pldevopsuser-grp101  
+
+Next :::
+
+		
+		- IAM Policies	# Administration Access 
+		
+		- IAM Roles 
+		
+		
+		- EC2 Service :::
+	
+
+######################
+Day 3 - 10th Aug. 2026
+######################
+
+		- IAM Policies	# Administration Access 
+		
+				pldevops-service-role - 
+		
+		- IAM Roles
+		
+		- pldevops-service-role-EC2
+		
+		- Create IAM Role --> Defined with required policy 
+		
+		- Attach that IAM Role to the AWS Resource
+
+
+
+		- Virtual Machines -> EC2 instance 
+		
+		
+	{
+	  "Version": "2012-10-17",
+	  "Statement": [
+		{
+		  "Sid": "Statement1",
+		  "Effect": "Allow",
+		  "Principal": "*",
+		  "Action": [
+			"s3:GetObject"
+		  ],
+		  "Resource": "arn:aws:s3:::loksai-eta-2025-s3-bucket1/*"
+		}
+	  ]
+	}
+	
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Principal":{
+            "AWS":[
+                 "arn:aws:iam::111122223333:user/JohnDoe,
+				 arn:aws:iam::1111222244444:user/Peter"
+         ]
+        },
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": [
+            "arn:aws:s3:::amzn-s3-demo-bucket/*"
+        ],
+        "Condition": {
+            "StringEquals": {
+                "s3:RequestObjectTag/Department": "Finance"
+            }
+        }
+    }]
+}		
+		
+		
+
+	https://awspolicygen.s3.amazonaws.com/policygen.html
+	
+	
+	https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html?icmpid=docs_amazons3_console
+	
